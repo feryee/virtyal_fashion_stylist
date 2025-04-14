@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-panel {
+    flex: 1;
+    position: relative;
+    background: url("../images/background-gradient.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggle-tabs {
+    display: flex;
+    background: #FFF2E5;
+    padding: 5px;
+    width: 350px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.toggle-tabs button {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.toggle-tabs .active {
+    background: #F26B1D;
+    color: white;
+}
+  
+  .left-panel .overlay {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .left-panel img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  
+  .welcome-text {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    text-align: left;
+  }
+  
+  .welcome-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-text p {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  .right-panel {
+    flex: 1;
+    background: #fff;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 120px;
+    margin-bottom: 30px;
+  }
+  
+  .tab {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .tab button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #fff1e6;
+    color: #fa7d1e;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tab button.active {
+    background-color: #fa7d1e;
+    color: #fff;
+  }
+  
+  .desc {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px;
+    border: 1px solid #fa7d1e;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 20px;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input input {
+    width: 100%;
+  }
+  
+  .password-input .toggle-visibility {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    cursor: pointer;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px 0 20px;
+  }
+  
+  .options a {
+    text-decoration: none;
+    color: #fa7d1e;
+  }
+  
+  .login-btn {
+    background-color: #fa7d1e;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup | Fashify</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div class="login-container">
+    <div class="left-panel">
+        <img src="{% static 'images/login-banner.png' %}" alt="Welcome" class="banner-img">
+        <div class="welcome-text">
+            <h2>Welcome Back to <span class="brand">Fashify</span>!</h2>
+            <p>Log in to continue discovering styles, curating outfits,<br>
+               and staying ahead in fashion.</p>
+        </div>
+    </div>
+    <div class="right-panel">
+        <div class="login-form">
+            <div class="logo">🧥 <span>Fashify</span></div>
+            <div class="toggle-tabs">
+                <button>Login</button>
+                <button class="active">Register</button>
+            </div>
+            <p class="intro-text">Sign in to explore the latest fashion trends and personalized styling tips.</p>
+            <form>
+                <label>Email ID</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your Password" required>
+
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Enter your Password" required>
+
+
+                <button type="submit" class="login-btn">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

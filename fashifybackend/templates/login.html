@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Fashify</title>
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="overlay">
+        <img src="{% static 'images/login-banner.png' %}" alt="Login Visual" />
+        <div class="welcome-text">
+          <h1>Welcome Back to Fashify!</h1>
+          <p>Log in to continue discovering styles, curating outfits, and staying ahead in fashion.</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="logo"> 
+        <img src="{% static 'images/logo.png' %}" alt="Fashify Logo" />
+      </div>
+      <div class="toggle-tabs">
+        <button class="active">Login</button>
+        <button>Register</button>
+      </div>
+
+      <p class="desc">Sign in to explore the latest fashion trends and personalized styling tips.</p>
+      <form>
+        <label>Email ID</label>
+        <input type="email" placeholder="Enter your email" required />
+        
+        <label>Password</label>
+        <div class="password-input">
+          <input type="password" placeholder="Enter your Password" required />
+          <span class="toggle-visibility">&#128065;</span>
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
